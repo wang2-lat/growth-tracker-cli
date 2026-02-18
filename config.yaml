@@ -1,0 +1,28 @@
+# Growth Tracker 配置文件
+
+# 数据源配置 (选择一种)
+data_source:
+  type: "local"  # local | google_analytics | database
+  
+  # 本地 JSON 数据文件路径
+  local_file: "data/channel_data.json"
+  
+  # Google Analytics 配置 (如使用 GA)
+  # ga_property_id: "GA4-XXXXXX"
+  # ga_credentials: "path/to/credentials.json"
+  
+  # 数据库配置 (如使用数据库)
+  # db_type: "postgresql"
+  # db_host: "localhost"
+  # db_port: 5432
+  # db_name: "growth_tracker"
+  # db_user: "user"
+  # db_password: "password"
+
+# 渠道成本配置 (每日成本，单位: 元)
+channel_costs:
+  google: 500
+  facebook: 300
+  xiaohongshu: 200
+  wechat: 100
+  email: 50
